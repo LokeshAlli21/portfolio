@@ -171,7 +171,7 @@ const Home = () => {
       title: "Database Management",
       icon: Database,
       skills: ["PostgreSQL", "MongoDB", "Supabase", "Data Modeling", "Query Optimization"],
-      color: "from-indigo-500 to-blue-600"
+      color: "from-indigo-500 to-cyan-600"
     },
     tools: {
       title: "Tools & DevOps",
@@ -222,7 +222,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-slate-900 text-white overflow-hidden pt-8">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-slate-900 text-white overflow-hidden">
       {/* Dynamic Background */}
       <div className="absolute inset-0 overflow-hidden">
         <div 
@@ -598,12 +598,12 @@ const Home = () => {
                 ].map((item, index) => (
                   <div key={index} className="group p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300">
                     <div className="flex items-center justify-between mb-2">
-                      <span className="text-white font-medium">{item.lang}</span>
-                      <span className="text-sm text-gray-400">{item.level}</span>
+                      <div className="text-lg font-semibold text-white">{item.lang}</div>
+                      <div className="text-sm text-blue-400">{item.level}</div>
                     </div>
                     <div className="w-full bg-gray-700 rounded-full h-2">
                       <div 
-                        className="bg-gradient-to-r from-blue-500 to-cyan-500 h-2 rounded-full transition-all duration-1000 group-hover:from-blue-400 group-hover:to-cyan-400"
+                        className="bg-gradient-to-r from-indigo-500 to-cyan-600 h-2 rounded-full transition-all duration-1000"
                         style={{ width: `${item.proficiency}%` }}
                       ></div>
                     </div>
@@ -611,7 +611,7 @@ const Home = () => {
                 ))}
               </div>
             </div>
-            
+
             {/* Soft Skills */}
             <div>
               <h2 className="text-3xl font-bold mb-8">
@@ -620,18 +620,29 @@ const Home = () => {
                 </span>
               </h2>
               
-              <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-4">
                 {[
-                  { skill: "Problem Solving", icon: Zap, color: "text-blue-400" },
-                  { skill: "Team Collaboration", icon: Users, color: "text-green-400" },
-                  { skill: "Communication", icon: Globe, color: "text-cyan-400" },
-                  { skill: "Adaptability", icon: Sparkles, color: "text-purple-400" },
-                  { skill: "Project Management", icon: Calendar, color: "text-orange-400" },
-                  { skill: "Creative Thinking", icon: Rocket, color: "text-pink-400" }
+                  { skill: "Problem Solving", level: 95, icon: Zap },
+                  { skill: "Team Collaboration", level: 90, icon: Users },
+                  { skill: "Communication", level: 88, icon: Mail },
+                  { skill: "Quick Learning", level: 92, icon: BookOpen },
+                  { skill: "Project Management", level: 85, icon: Calendar },
+                  { skill: "Leadership", level: 80, icon: Star }
                 ].map((item, index) => (
-                  <div key={index} className="group p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 text-center">
-                    <item.icon className={`w-8 h-8 mx-auto mb-2 ${item.color} group-hover:scale-110 transition-transform`} />
-                    <span className="text-white text-sm font-medium">{item.skill}</span>
+                  <div key={index} className="group p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300">
+                    <div className="flex items-center gap-3 mb-2">
+                      <item.icon className="w-5 h-5 text-blue-400" />
+                      <div className="flex-1 flex items-center justify-between">
+                        <span className="text-white font-medium">{item.skill}</span>
+                        <span className="text-sm text-gray-400">{item.level}%</span>
+                      </div>
+                    </div>
+                    <div className="w-full bg-gray-700 rounded-full h-2">
+                      <div 
+                        className="bg-gradient-to-r from-indigo-500 to-cyan-600 h-2 rounded-full transition-all duration-1000"
+                        style={{ width: `${item.level}%` }}
+                      ></div>
+                    </div>
                   </div>
                 ))}
               </div>
@@ -640,63 +651,92 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* Testimonials/Future Section */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-4">
+          <h2 className="text-4xl font-bold mb-8">
             <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-              Let's Connect
+              What Drives Me
             </span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto mb-12">
-            Ready to bring your ideas to life? Let's collaborate on building something amazing together. 
-            I'm always excited to work on innovative projects and solve complex challenges.
-          </p>
           
-          <div className="flex flex-wrap justify-center gap-6 mb-12">
-            <a 
-              href="mailto:lokeshalli1807@gmail.com"
-              className="group bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 flex items-center gap-3 shadow-lg"
-            >
-              <Mail className="w-5 h-5 group-hover:rotate-12 transition-transform" />
-              Send Email
-            </a>
-            <a 
-              href="https://www.linkedin.com/in/lokesh1807"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group border border-blue-400 hover:bg-blue-400 hover:text-slate-900 px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 flex items-center gap-3 shadow-lg"
-            >
-              <Linkedin className="w-5 h-5 group-hover:rotate-12 transition-transform" />
-              LinkedIn
-            </a>
-            <a 
-              href="https://github.com/LokeshAlli21"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group border border-gray-400 hover:bg-gray-400 hover:text-slate-900 px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 flex items-center gap-3 shadow-lg"
-            >
-              <Github className="w-5 h-5 group-hover:rotate-12 transition-transform" />
-              GitHub
-            </a>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="group p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 transform hover:scale-105">
+              <Rocket className="w-12 h-12 text-blue-400 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+              <h3 className="text-xl font-semibold text-white mb-3">Innovation</h3>
+              <p className="text-gray-400 text-sm">
+                Constantly exploring new technologies and methodologies to build cutting-edge solutions that make a real difference.
+              </p>
+            </div>
+            
+            <div className="group p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 transform hover:scale-105">
+              <Users className="w-12 h-12 text-blue-400 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+              <h3 className="text-xl font-semibold text-white mb-3">Collaboration</h3>
+              <p className="text-gray-400 text-sm">
+                Thriving in team environments where diverse perspectives come together to create exceptional products and experiences.
+              </p>
+            </div>
+            
+            <div className="group p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 transform hover:scale-105">
+              <Sparkles className="w-12 h-12 text-blue-400 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+              <h3 className="text-xl font-semibold text-white mb-3">Excellence</h3>
+              <p className="text-gray-400 text-sm">
+                Committed to delivering high-quality code and user experiences that exceed expectations and drive business success.
+              </p>
+            </div>
           </div>
+        </div>
+      </section>
 
-          {/* Quick Contact Info */}
-          <div className="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto">
-            <div className="group p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300">
-              <Mail className="w-8 h-8 text-blue-400 mx-auto mb-3 group-hover:scale-110 transition-transform" />
-              <h3 className="text-white font-semibold mb-2">Email</h3>
-              <p className="text-gray-400 text-sm">lokeshalli1807@gmail.com</p>
+      {/* CTA Section */}
+      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="p-8 rounded-2xl bg-gradient-to-r from-indigo-500/10 via-cyan-500/10 to-indigo-500/10 backdrop-blur-sm border border-indigo-500/20">
+            <Sparkles className="w-16 h-16 text-blue-400 mx-auto mb-6 animate-pulse" />
+            <h2 className="text-4xl font-bold mb-6">
+              <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                Let's Build Something Amazing Together
+              </span>
+            </h2>
+            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+              Ready to bring your ideas to life with cutting-edge web technologies and innovative solutions. 
+              Let's create something extraordinary that makes a lasting impact.
+            </p>
+            
+            <div className="flex flex-wrap justify-center gap-4 mb-8">
+              <a 
+                href="mailto:lokeshalli1807@gmail.com"
+                className="group bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-700 hover:to-cyan-700 px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 flex items-center gap-2 shadow-lg"
+              >
+                <Mail className="w-5 h-5 group-hover:rotate-12 transition-transform" />
+                Get In Touch
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </a>
+              
+              <a 
+                href="https://github.com/LokeshAlli21"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group border border-indigo-400 hover:bg-indigo-400 hover:text-slate-900 px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 flex items-center gap-2 shadow-lg"
+              >
+                <Github className="w-5 h-5 group-hover:rotate-12 transition-transform" />
+                View My Work
+              </a>
             </div>
-            <div className="group p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300">
-              <Phone className="w-8 h-8 text-blue-400 mx-auto mb-3 group-hover:scale-110 transition-transform" />
-              <h3 className="text-white font-semibold mb-2">Phone</h3>
-              <p className="text-gray-400 text-sm">+91 84858 68884</p>
-            </div>
-            <div className="group p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300">
-              <MapPin className="w-8 h-8 text-blue-400 mx-auto mb-3 group-hover:scale-110 transition-transform" />
-              <h3 className="text-white font-semibold mb-2">Location</h3>
-              <p className="text-gray-400 text-sm">Solapur, Maharashtra</p>
+            
+            <div className="flex justify-center gap-6 text-gray-400">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-blue-400">24/7</div>
+                <div className="text-sm">Available</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-blue-400">Fast</div>
+                <div className="text-sm">Response</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-blue-400">Quality</div>
+                <div className="text-sm">Guaranteed</div>
+              </div>
             </div>
           </div>
         </div>
@@ -705,49 +745,42 @@ const Home = () => {
       {/* Footer */}
       <footer className="relative py-12 px-4 sm:px-6 lg:px-8 border-t border-white/10">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="text-center md:text-left">
-              <h3 className="text-xl font-bold text-white mb-2">
-                <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-                  Lokesh Alli
-                </span>
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="text-center md:text-left mb-6 md:mb-0">
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-2">
+                Lokesh Alli
               </h3>
-              <p className="text-gray-400 text-sm">Full Stack Developer • Problem Solver • Tech Enthusiast</p>
+              <p className="text-gray-400">Full Stack Developer • Problem Solver • Tech Enthusiast</p>
             </div>
             
-            <div className="flex items-center gap-6">
+            <div className="flex gap-4">
               <a 
                 href="https://github.com/LokeshAlli21" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-blue-400 transition-colors"
-                aria-label="GitHub"
+                className="p-3 rounded-full bg-white/5 hover:bg-white/10 transition-colors border border-white/10 hover:border-indigo-400/50"
               >
-                <Github className="w-6 h-6" />
+                <Github className="w-5 h-5 text-gray-400 hover:text-blue-400 transition-colors" />
               </a>
               <a 
                 href="https://www.linkedin.com/in/lokesh1807" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-blue-400 transition-colors"
-                aria-label="LinkedIn"
+                className="p-3 rounded-full bg-white/5 hover:bg-white/10 transition-colors border border-white/10 hover:border-indigo-400/50"
               >
-                <Linkedin className="w-6 h-6" />
+                <Linkedin className="w-5 h-5 text-gray-400 hover:text-blue-400 transition-colors" />
               </a>
               <a 
                 href="mailto:lokeshalli1807@gmail.com"
-                className="text-gray-400 hover:text-blue-400 transition-colors"
-                aria-label="Email"
+                className="p-3 rounded-full bg-white/5 hover:bg-white/10 transition-colors border border-white/10 hover:border-indigo-400/50"
               >
-                <Mail className="w-6 h-6" />
+                <Mail className="w-5 h-5 text-gray-400 hover:text-blue-400 transition-colors" />
               </a>
             </div>
           </div>
           
-          <div className="mt-8 pt-8 border-t border-white/10 text-center">
-            <p className="text-gray-400 text-sm">
-              © 2024 Lokesh Alli. Crafted with ❤️ using React & Tailwind CSS
-            </p>
+          <div className="mt-8 pt-8 border-t border-white/10 text-center text-gray-500">
+            <p>&copy; 2024 Lokesh Alli. Crafted with ❤️ and lots of ☕</p>
           </div>
         </div>
       </footer>

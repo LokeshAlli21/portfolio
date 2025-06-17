@@ -5,7 +5,7 @@ import Header from './components/Header';
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-br from-slate-800 via-gray-800 to-slate-800">
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-slate-900 via-gray-800 to-slate-800">
       <Header />
 
       <main className="min-h-screen">
