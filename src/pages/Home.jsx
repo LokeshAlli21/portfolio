@@ -589,7 +589,7 @@ const Home = () => {
                 </span>
               </h2>
               
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-4">
                 {[
                   { lang: "Telugu", level: "Native", proficiency: 100 },
                   { lang: "English", level: "Proficient", proficiency: 90 },
@@ -634,7 +634,7 @@ const Home = () => {
                       <item.icon className="w-5 h-5 text-blue-400" />
                       <div className="flex-1 flex items-center justify-between">
                         <span className="text-white font-medium">{item.skill}</span>
-                        <span className="text-sm text-gray-400">{item.level}%</span>
+                        {/* <span className="text-sm text-gray-400">{item.level}%</span> */}
                       </div>
                     </div>
                     <div className="w-full bg-gray-700 rounded-full h-2">
