@@ -222,7 +222,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-slate-900 text-white overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-slate-900 text-white overflow-hidden pt-8">
       {/* Dynamic Background */}
       <div className="absolute inset-0 overflow-hidden">
         <div 
