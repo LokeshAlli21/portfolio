@@ -15,8 +15,8 @@ const Home = () => {
 
   const titles = [
     'Full Stack Developer',
-    'MERN Stack Expert', 
-    'Real Estate Tech Specialist',
+    'React, Node, Express, Postgres', 
+    'AWS ',
     'Problem Solver'
   ];
 
@@ -284,7 +284,7 @@ const Home = () => {
             </div>
             
             <p className="text-lg text-gray-400 max-w-3xl mx-auto mb-8 leading-relaxed">
-              Passionate Full Stack Developer from Solapur, specializing in <span className="text-blue-400">MERN stack</span> and <span className="text-cyan-400">real estate technology</span>. 
+              Passionate Full Stack Developer from Solapur, specializing in <span className="text-blue-400">MERN stack</span> and <span className="text-cyan-400">Postgres</span>. 
               I build scalable applications that solve real-world problems, with expertise in creating seamless user experiences and robust backend systems.
             </p>
           </div>
