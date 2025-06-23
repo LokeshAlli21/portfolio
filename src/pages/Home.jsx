@@ -255,7 +255,7 @@ const Home = () => {
       </div>
 
       {/* Hero Section */}
-      <section ref={heroRef} className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
+      <section ref={heroRef} id="about" className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
         <div className={`max-w-6xl mx-auto text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           {/* Profile Image */}
           <div className="mb-8">
@@ -352,7 +352,7 @@ const Home = () => {
       </section>
 
       {/* Skills Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+      <section id="skills" className="relative py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
@@ -388,7 +388,7 @@ const Home = () => {
       </section>
 
       {/* Projects Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+      <section id="projects" className="relative py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
@@ -496,7 +496,7 @@ const Home = () => {
       </section>
 
       {/* Achievements Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+      <section id="achievements" className="relative py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
@@ -526,7 +526,7 @@ const Home = () => {
       </section>
 
       {/* Education Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+      <section id="education" className="relative py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
@@ -689,7 +689,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+      <section id="contact" className="relative py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <div className="p-8 rounded-2xl bg-gradient-to-r from-indigo-500/10 via-cyan-500/10 to-indigo-500/10 backdrop-blur-sm border border-indigo-500/20">
             <Sparkles className="w-16 h-16 text-blue-400 mx-auto mb-6 animate-pulse" />
