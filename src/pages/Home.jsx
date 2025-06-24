@@ -787,7 +787,7 @@ const Home = () => {
                 </a>
               </div>
               
-              <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
+              <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
                 <div className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10">
                   <div className="text-3xl font-bold text-blue-400 mb-2">24/7</div>
                   <div className="text-sm text-gray-400 font-medium">Available</div>

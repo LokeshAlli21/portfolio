@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { 
   Github, Linkedin, Mail, Phone, MapPin, Heart, 
   ArrowUp, Code, Coffee, Sparkles, Star, 
-  ExternalLink, Calendar, Globe
+  ExternalLink, Calendar, Globe, Dumbbell, Target
 } from 'lucide-react';
 
 const Footer = () => {
@@ -185,18 +185,38 @@ const Footer = () => {
                   </div>
                 ))}
               </div>
-
-              {/* Fun Stats */}
-              <div className="mt-8 p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10">
-                <div className="flex items-center gap-2 mb-4">
-                  <Sparkles className="w-5 h-5 text-cyan-400" />
-                  <span className="text-white font-semibold">Fun Fact</span>
-                </div>
-                <div className="flex items-center gap-2 text-gray-400">
-                  <Coffee className="w-4 h-4 text-orange-400" />
-                  <span className="text-sm">Powered by countless cups of coffee ☕</span>
-                </div>
-              </div>
+{/* Daily Fuel */}
+<div className="mt-8 p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10">
+  <div className="flex items-center gap-2 mb-4">
+    <Target className="w-5 h-5 text-cyan-400" />
+    <span className="text-white  font-semibold">Daily Fuel</span>
+  </div>
+  <div className="space-y-5">
+    <div className="flex items-start gap-3">
+      <div className="p-2 rounded-lg bg-blue-500/20 border border-blue-500/30">
+        <Coffee className="w-6 h-6 text-blue-400" />
+      </div>
+      <div className="flex-1">
+        <div className="text-xs uppercase tracking-wider text-gray-400 mb-1 font-bold">Daily Catalyst</div>
+        <div className="text-sm font-medium text-white leading-relaxed">
+          Caffeine fuels my unstoppable focus ☕
+        </div>
+      </div>
+    </div>
+    
+    <div className="flex items-start gap-3">
+      <div className="p-2 rounded-lg bg-orange-500/20 border border-orange-500/30">
+        <Dumbbell className="w-5 h-5 text-orange-400" />
+      </div>
+      <div className="flex-1">
+        <div className="text-xs uppercase tracking-wider text-gray-400 mb-1 font-bold">Iron Discipline</div>
+        <div className="text-sm font-medium text-white leading-relaxed">
+          Where strength meets pure determination 💪
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
             </div>
           </div>
         </div>
