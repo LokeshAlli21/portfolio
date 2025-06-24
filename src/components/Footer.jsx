@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { 
   Github, Linkedin, Mail, Phone, MapPin, Heart, 
   ArrowUp, Code, Coffee, Sparkles, Star, 
@@ -7,6 +7,21 @@ import {
 
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+        const isScrolled = window.scrollY > 150;
+        setScrolled(isScrolled);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        
+        // Initial check
+        handleScroll();
+        
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
   React.useEffect(() => {
     setIsVisible(true);
@@ -230,10 +245,10 @@ const Footer = () => {
       {/* Scroll to Top Floating Button (Alternative) */}
       <button
         onClick={scrollToTop}
-        className="fixed bottom-8 right-8 p-4 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white rounded-full shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-110 z-50 group"
+        className={`${scrolled ? 'fixed' : 'hidden'} cursor-pointer bottom-8 right-8 p-4 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white rounded-full shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-110 z-50 group`}
         aria-label="Scroll to top"
       >
-        <ArrowUp className="w-6 h-6 group-hover:-translate-y-1 transition-transform" />
+        <ArrowUp className="w-6 h-6 " />
       </button>
     </footer>
   );

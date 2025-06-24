@@ -72,7 +72,7 @@ const Header = () => {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      const headerHeight = sectionId === 'about' ? 100 : sectionId === 'contact' ? 50 : 0;
+      const headerHeight = sectionId === 'about' ? 100 : sectionId === 'contact' ? 0 : 0;
       const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - headerHeight;
       
       window.scrollTo({
