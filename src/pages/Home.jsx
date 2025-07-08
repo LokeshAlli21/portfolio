@@ -15,9 +15,9 @@ const Home = () => {
 
   const titles = [
     'Full Stack Developer',
-    'React, Node, Express, Postgres', 
-    'AWS ',
-    'Problem Solver'
+    'React • Node.js • PostgreSQL',
+    'AWS & Cloud Infrastructure',
+    'Scalable Web Applications'
   ];
 
   useEffect(() => {
