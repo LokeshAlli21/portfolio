@@ -158,9 +158,19 @@ const Home = () => {
     frontend: {
       title: "Frontend Development",
       icon: Monitor,
-      skills: ["React.js", "Redux Toolkit", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap", "Vite"],
+      skills: [
+        "React.js",
+        "Redux Toolkit",
+        "JavaScript (ES6+)",
+        "HTML5",
+        "CSS3",
+        "Tailwind CSS",
+        "Bootstrap",
+        "Vite",
+        "Axios",
+      ],
       color: "from-blue-500 to-cyan-500"
-    },
+  },
     backend: {
       title: "Backend Development", 
       icon: Server,
@@ -170,13 +180,13 @@ const Home = () => {
     database: {
       title: "Database Management",
       icon: Database,
-      skills: ["PostgreSQL", "MongoDB", "Supabase", "Data Modeling", "Query Optimization"],
+      skills: ["PostgreSQL", "MongoDB", "Data Modeling", "Query Optimization"],
       color: "from-indigo-500 to-cyan-600"
     },
     tools: {
       title: "Tools & DevOps",
       icon: Zap,
-      skills: ["Git", "GitHub", "Vercel", "EC2", "NGINX", "Postman", "VS Code", "ESLint"],
+      skills: ["Git & GitHub", "Vercel", "AWS - EC2 & RDS", "NGINX", "PM2", "Postman", "VS Code", "Android Studio"],
       color: "from-orange-500 to-red-500"
     },
     languages: {
@@ -189,18 +199,12 @@ const Home = () => {
 
   const stats = [
     { label: "Projects Completed", value: "10+", icon: Code, color: "text-blue-400" },
-    { label: "Years Experience", value: "2+", icon: Calendar, color: "text-emerald-400" },
+    { label: "Months of Experience", value: "6+", icon: Calendar, color: "text-emerald-400" },
     { label: "Technologies Mastered", value: "15+", icon: Zap, color: "text-cyan-400" },
     { label: "GitHub Repositories", value: "20+", icon: Github, color: "text-orange-400" }
   ];
 
   const achievements = [
-    {
-      title: "Real Estate Tech Innovation",
-      description: "Developed RERA compliance platform used by multiple promoters",
-      icon: Award,
-      color: "text-emerald-400"
-    },
     {
       title: "Full Stack Expertise",
       description: "Mastered MERN stack with production-ready applications",
@@ -297,8 +301,8 @@ const Home = () => {
             </div>
             
             <p className="text-xl text-gray-400 max-w-4xl mx-auto mb-10 leading-relaxed font-light">
-              Passionate Full Stack Developer from Solapur, specializing in <span className="text-blue-400 font-semibold">MERN stack</span> and <span className="text-cyan-400 font-semibold">Postgres</span>. 
-              I build scalable applications that solve real-world problems, with expertise in creating seamless user experiences and robust backend systems.
+              Full Stack Developer specializing in modern web applications using <span className="text-blue-400 font-semibold">React</span>, <span className="text-green-400 font-semibold">Node.js</span>, and <span className="text-cyan-400 font-semibold">PostgreSQL</span>. 
+              I craft scalable solutions that transform complex ideas into intuitive digital experiences with clean code and performance-driven architecture.
             </p>
           </div>
 
@@ -413,7 +417,7 @@ const Home = () => {
               </span>
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              A showcase of innovative solutions built with modern technologies, demonstrating expertise in full-stack development and real-world problem solving.
+              Featured projects demonstrating end-to-end development capabilities, from responsive frontend interfaces to robust backend systems and database optimization.
             </p>
           </div>
           
@@ -579,10 +583,10 @@ const Home = () => {
                     <p className="text-blue-400 text-lg font-medium">AGPIT Solapur (DBATU)</p>
                   </div>
                 </div>
-                <span className="text-blue-400 font-semibold text-lg">2022 - Present</span>
+                <span className="text-blue-400 font-semibold text-lg">2022 - 2025</span>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                Acquiring advanced knowledge in computer science fundamentals, software engineering principles, and modern development methodologies. 
+                Acquired advanced knowledge in computer science fundamentals, software engineering principles, and modern development methodologies. 
                 Developing essential skills in teamwork, communication, and project management.
               </p>
             </div>
