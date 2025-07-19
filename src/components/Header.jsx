@@ -5,7 +5,7 @@ import {
   Sparkles, Zap, Monitor, Database, Server, Globe
 } from 'lucide-react';
 
-const Header = () => {
+const Header = ({handleDownloadResume}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('about');
@@ -163,7 +163,7 @@ const Header = () => {
               
               <div className="w-px h-8 bg-gradient-to-b from-transparent via-white/20 to-transparent mx-2"></div>
               
-              <button className="group relative flex items-center gap-3 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25 overflow-hidden">
+              <button onClick={handleDownloadResume} className="group relative flex items-center gap-3 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25 overflow-hidden">
                 {/* Button background animation */}
                 <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <Download className="w-4 h-4 group-hover:animate-bounce relative z-10" />

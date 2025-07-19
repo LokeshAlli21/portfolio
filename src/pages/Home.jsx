@@ -5,8 +5,12 @@ import {
   Calendar, Users, Zap, Sparkles, Rocket, BookOpen, Award,
   ChevronDown, Play, Eye, GitBranch, Globe, Monitor, Layers
 } from 'lucide-react';
+import { useOutletContext } from 'react-router-dom';
 
 const Home = () => {
+
+   const { handleDownloadResume } = useOutletContext();
+
   const [isVisible, setIsVisible] = useState(false);
   const [activeProject, setActiveProject] = useState(0);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -261,7 +265,7 @@ const Home = () => {
         ))}
       </div>
 
-      <style jsx>{`
+      <style jsx="true">{`
         @keyframes float {
           0%, 100% { transform: translateY(0px) rotate(0deg); }
           50% { transform: translateY(-20px) rotate(180deg); }
@@ -344,7 +348,7 @@ const Home = () => {
               <Linkedin className="w-6 h-6 group-hover:rotate-12 transition-transform" />
               LinkedIn
             </a>
-            <button className="group border-2 border-gray-400 hover:bg-gray-400 hover:text-slate-900 px-10 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 flex items-center gap-3 shadow-2xl hover:shadow-gray-500/25 text-lg">
+            <button onClick={handleDownloadResume} className="group border-2 border-gray-400 hover:bg-gray-400 hover:text-slate-900 px-10 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 flex items-center gap-3 shadow-2xl hover:shadow-gray-500/25 text-lg">
               <Download className="w-6 h-6 group-hover:bounce transition-transform" />
               Resume
             </button>
