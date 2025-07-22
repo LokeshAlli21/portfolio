@@ -76,68 +76,48 @@ const Home = () => {
 
   const projects = [
     {
-      title: "RERA Insights Platform",
-      subtitle: "Real Estate Compliance Revolution",
-      description: "A comprehensive platform transforming how real estate projects comply with RERA regulations. Features bilingual UI, real-time tracking, and seamless document management.",
-      longDescription: "Built for the real estate industry to streamline RERA compliance with quarterly progress reports, promoter management, and real-time unit tracking. The platform handles complex workflows while maintaining an intuitive user experience.",
-      tech: ["React", "Node.js", "PostgreSQL", "Supabase", "Tailwind CSS"],
-      features: [
-        "Bilingual UI (English + Marathi)",
-        "Camera Integration for Documents", 
-        "Real-time Unit Finance Tracking",
-        "Promoter Dashboard",
-        "Quarterly Progress Reports",
-        "Document Management System"
+      "title": "Appwrite Blog Application",
+      "subtitle": "Full-Stack Blog Platform",
+      "description": "Built a full-stack blog platform with Appwrite backend, user authentication, and responsive frontend using Tailwind CSS.",
+      "longDescription": "Developed a feature-rich blog application with secure authentication and database management powered by Appwrite. Integrated a clean and responsive user interface built with React.js and Tailwind CSS. Implemented core features like post creation, editing, deletion, and protected routes for an enhanced user experience. Deployed and maintained on Vercel for optimized accessibility and performance.",
+      "tech": ["React.js", "Appwrite", "Tailwind CSS", "Vercel", "JavaScript", "Redux" , "React Router"],
+      "features": [
+        "User Authentication & Authorization with Appwrite",
+        "Post Creation, Editing, and Deletion",
+        "Protected Routes with Access Control",
+        "Responsive Frontend with Tailwind CSS",
+        "Optimized Deployment on Vercel",
+        "Clean UI and Seamless User Experience"
       ],
-      github: "https://github.com/LokeshAlli21/RERA-INSIGHTS",
-      status: "Production Ready",
-      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=400&fit=crop&crop=faces,edges",
-      color: "from-emerald-500 to-teal-600",
-      stats: { commits: "150+", files: "45+", users: "10+" }
+      "github": "https://github.com/LokeshAlli21/Appwrite-Blog",
+      "live": "https://appwrite-blog-first-deploy.vercel.app/",
+      "status": "Live",
+      "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&h=400&fit=crop&crop=faces,edges",
+      "color": "from-blue-500 to-indigo-600",
+      "stats": { "commits": "10+", "files": "30+", "users": "1" },
+      "date": "Oct 2024"
     },
     {
-      title: "Appwrite Blog Platform",
-      subtitle: "Modern Content Management",
-      description: "Full-stack blog platform with advanced authentication, rich text editing, and responsive design. Built for scalability and user experience.",
-      longDescription: "A feature-rich blogging platform that demonstrates modern web development practices with secure authentication, post management, and clean UI design.",
-      tech: ["React", "Appwrite", "Tailwind CSS", "Vercel", "JavaScript"],
-      features: [
-        "User Authentication & Authorization",
-        "Rich Text Editor",
-        "Post Management System",
-        "Responsive Design",
-        "SEO Optimized",
-        "Fast Performance"
+      "title": "Book Notes Manager",
+      "subtitle": "Personal Book Management System",
+      "description": "Book note management app with PostgreSQL backend and Open Library API integration. Designed for readers to manage notes with ratings and cover images.",
+      "longDescription": "Developed a full-stack book notes management system using PostgreSQL for data storage and RESTful APIs built with Node.js and Express.js. Features include CRUD operations, book rating system with CSS-based star UI, and Open Library API integration for fetching book covers. Focused on delivering a user-friendly interface and seamless data handling.",
+      "tech": ["Node.js", "Express.js", "PostgreSQL", "REST API", "JavaScript", "Open Library API"],
+      "features": [
+        "Full CRUD Operations with Express.js",
+        "PostgreSQL Data Storage",
+        "Book Cover Fetching from Open Library API",
+        "Interactive Rating System with CSS",
+        "Search & Filter Books",
+        "User-Friendly API Design"
       ],
-      github: "https://github.com/LokeshAlli21/Appwrite-Blog",
-      live: "https://appwrite-blog-first-deploy.vercel.app/",
-      status: "Live",
-      image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&h=400&fit=crop&crop=faces,edges",
-      color: "from-blue-500 to-indigo-600",
-      stats: { commits: "120+", files: "32+", users: "25+" }
+      "github": "https://github.com/LokeshAlli21/Book-Notes",
+      "status": "Completed",
+      "image": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&h=400&fit=crop&crop=faces,edges",
+      "color": "from-orange-500 to-red-600",
+      "stats": { "commits": "20+", "files": "10+", "users": "1" },
+      "date": "Apr 2024"
     },
-    {
-  "title": "Appwrite Blog Platform",
-  "subtitle": "Secure Blog Platform with Appwrite",
-  "description": "Full-stack blog application with user authentication, post CRUD, and responsive UI. Built with React, Appwrite, and Tailwind CSS for modern web experiences.",
-  "longDescription": "A robust blogging platform that implements secure authentication, post creation, editing, deletion, and user-friendly design. Integrated with Appwrite backend services for authentication and database, styled with Tailwind CSS, and deployed on Vercel for scalability.",
-  "tech": ["React.js", "Appwrite", "Tailwind CSS", "Vercel", "JavaScript", "React Router"],
-  "features": [
-    "Secure User Authentication (Appwrite)",
-    "Post Creation, Editing & Deletion",
-    "Protected Routes & Access Control",
-    "Rich Text Editor with Markdown Support",
-    "Responsive & Mobile-Friendly UI",
-    "Deployment on Vercel with CI/CD Integration"
-  ],
-  "github": "https://github.com/LokeshAlli21/Appwrite-Blog",
-  "live": "https://appwrite-blog-first-deploy.vercel.app/",
-  "status": "Live",
-  "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&h=400&fit=crop&crop=faces,edges",
-  "color": "from-blue-500 to-indigo-600",
-  "stats": { "commits": "100+", "files": "30+", "users": "20+" }
-}
-,
     {
       title: "Online Course Platform",
       subtitle: "Education Technology Solution",
@@ -158,26 +138,6 @@ const Home = () => {
       color: "from-cyan-500 to-blue-600",
       stats: { commits: "200+", files: "60+", users: "15+" }
     },
-    {
-      title: "Book Notes Manager",
-      subtitle: "Personal Knowledge System",
-      description: "Intelligent book management app with PostgreSQL backend and Open Library API integration. Perfect for avid readers and learners.",
-      longDescription: "A sophisticated note-taking application for book enthusiasts, featuring advanced search, categorization, and integration with external book databases.",
-      tech: ["Node.js", "Express.js", "PostgreSQL", "REST API", "JavaScript"],
-      features: [
-        "CRUD Operations",
-        "Advanced Rating System",
-        "Book Cover Fetching",
-        "Search & Filter",
-        "Reading Progress Tracking",
-        "Export Functionality"
-      ],
-      github: "https://github.com/LokeshAlli21/Book-Notes",
-      status: "Completed",
-      image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&h=400&fit=crop&crop=faces,edges",
-      color: "from-orange-500 to-red-600",
-      stats: { commits: "80+", files: "25+", users: "8+" }
-    }
   ];
 
   const skills = {
