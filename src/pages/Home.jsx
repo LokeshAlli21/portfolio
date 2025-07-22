@@ -9,7 +9,7 @@ import { useOutletContext } from 'react-router-dom';
 
 const Home = () => {
 
-   const { handleDownloadResume } = useOutletContext();
+   const { handleDownloadResume, handleDownloadAPK } = useOutletContext();
 
   const [isVisible, setIsVisible] = useState(false);
   const [activeProject, setActiveProject] = useState(0);
@@ -98,27 +98,6 @@ const Home = () => {
       "date": "Oct 2024"
     },
     {
-      "title": "Book Notes Manager",
-      "subtitle": "Personal Book Management System",
-      "description": "Book note management app with PostgreSQL backend and Open Library API integration. Designed for readers to manage notes with ratings and cover images.",
-      "longDescription": "Developed a full-stack book notes management system using PostgreSQL for data storage and RESTful APIs built with Node.js and Express.js. Features include CRUD operations, book rating system with CSS-based star UI, and Open Library API integration for fetching book covers. Focused on delivering a user-friendly interface and seamless data handling.",
-      "tech": ["Node.js", "Express.js", "PostgreSQL", "REST API", "JavaScript", "Open Library API"],
-      "features": [
-        "Full CRUD Operations with Express.js",
-        "PostgreSQL Data Storage",
-        "Book Cover Fetching from Open Library API",
-        "Interactive Rating System with CSS",
-        "Search & Filter Books",
-        "User-Friendly API Design"
-      ],
-      "github": "https://github.com/LokeshAlli21/Book-Notes",
-      "status": "Completed",
-      "image": "project-images/book-notes.png",
-      "color": "from-orange-500 to-red-600",
-      "stats": { "commits": "20+", "files": "10+", "users": "1" },
-      "date": "Apr 2024"
-    },
-    {
       "title": "Online Course Platform",
       "subtitle": "EdTech Platform | College Project",
       "description": "Team project built with React.js and Appwrite for managing online courses with multi-role user access, video streaming, and authentication.",
@@ -133,6 +112,7 @@ const Home = () => {
         "Responsive UI with Tailwind CSS"
       ],
       "github": "https://github.com/Shripad21/Online_Course_Platform",
+      "live": "https://online-course-platform-two.vercel.app/",
       "status": "Featured",
       "image": "project-images/online-course-platform.png",
       "color": "from-cyan-500 to-blue-600",
@@ -155,12 +135,33 @@ const Home = () => {
   ],
   "github": "https://github.com/Shripad21/Pixabay",
   "status": "Completed",
-  "image": "project-images/pixabay-clone.png",
+  "image": "project-images/pixabay-clone.jpeg",
   "color": "from-purple-500 to-pink-500",
   "stats": { "commits": "3+", "files": "25+", "users": "2+" },
   "date": "April 2024",
   "projectType": "College Group Project"
 },
+    {
+      "title": "Book Notes Manager",
+      "subtitle": "Personal Book Management System",
+      "description": "Book note management app with PostgreSQL backend and Open Library API integration. Designed for readers to manage notes with ratings and cover images.",
+      "longDescription": "Developed a full-stack book notes management system using PostgreSQL for data storage and RESTful APIs built with Node.js and Express.js. Features include CRUD operations, book rating system with CSS-based star UI, and Open Library API integration for fetching book covers. Focused on delivering a user-friendly interface and seamless data handling.",
+      "tech": ["Node.js", "Express.js", "PostgreSQL", "REST API", "JavaScript", "Open Library API"],
+      "features": [
+        "Full CRUD Operations with Express.js",
+        "PostgreSQL Data Storage",
+        "Book Cover Fetching from Open Library API",
+        "Interactive Rating System with CSS",
+        "Search & Filter Books",
+        "User-Friendly API Design"
+      ],
+      "github": "https://github.com/LokeshAlli21/Book-Notes",
+      "status": "Completed",
+      "image": "project-images/book-notes.png",
+      "color": "from-orange-500 to-red-600",
+      "stats": { "commits": "20+", "files": "10+", "users": "1" },
+      "date": "Apr 2024"
+    },
 {
   "title": "Kids Learning App",
   "subtitle": "Educational Android App | College Project | Diploma",
@@ -180,7 +181,8 @@ const Home = () => {
   "color": "from-yellow-400 to-orange-500",
   "stats": { "commits": "3+", "files": "20+", "users": "2+" },
   "date": "March 2022",
-  "projectType": "College Group Project"
+  "projectType": "College Group Project",
+  "download-apk": true
 }
 
   ];
@@ -439,31 +441,31 @@ const Home = () => {
       </section>
 
       {/* Enhanced Projects Section */}
-<section id="projects" className="relative py-32 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <section id="projects" className="relative py-32 px-4 sm:px-6 lg:px-8 overflow-hidden">
         {/* Animated Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-gray-900 to-black">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1),transparent_70%)]"></div>
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
         </div>
         
         <div className="max-w-7xl mx-auto relative z-10">
           {/* Enhanced Header */}
           <div className="text-center mb-24">
-            <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500/10 to-purple-500/10 backdrop-blur-xl border border-white/10 rounded-full mb-8">
-              <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full animate-pulse"></div>
+            <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500/10 to-blue-500/10 backdrop-blur-xl border border-white/10 rounded-full mb-8">
+              <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-blue-400 rounded-full animate-pulse"></div>
               <span className="text-sm font-medium text-blue-400">Portfolio Highlights</span>
             </div>
             
             <h2 className="text-6xl lg:text-7xl font-black mb-8 tracking-tight">
-              <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent animate-gradient-x">
+              <span className="bg-gradient-to-r from-blue-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent animate-gradient-x">
                 Featured Projects
               </span>
             </h2>
             
             <p className="text-xl lg:text-2xl text-gray-400 max-w-4xl mx-auto leading-relaxed font-light">
-              Showcasing <span className="text-white font-semibold">full-stack expertise</span> through innovative solutions, 
-              from <span className="text-blue-400">modern UIs</span> to <span className="text-purple-400">scalable architectures</span>
+              Showcasing <span className="text-white font-semibold">full-stack expertise</span> through practical solutions, 
+              from <span className="text-blue-400">modern UIs</span> to <span className="text-blue-400">scalable architectures</span>
             </p>
           </div>
           
@@ -483,7 +485,7 @@ const Home = () => {
                 
                 {/* Project Image with Advanced Effects */}
                 <div className="relative h-72 lg:h-80 overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20 z-10"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-blue-600/20 z-10"></div>
                   <img 
                     src={project.image} 
                     alt={project.title}
@@ -511,11 +513,11 @@ const Home = () => {
                   {/* Enhanced Project Header */}
                   <div className="mb-8">
                     <div className="flex items-center justify-between mb-4">
-                      <h3 className="text-3xl lg:text-4xl font-black text-white group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-400 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-500">
+                      <h3 className="text-3xl lg:text-4xl font-black text-white group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-blue-400 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-500">
                         {project.title}
                       </h3>
                       {project.projectType && (
-                        <span className="text-xs px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full border border-purple-500/30">
+                        <span className="text-xs px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full border border-blue-500/30">
                           {project.projectType}
                         </span>
                       )}
@@ -544,8 +546,8 @@ const Home = () => {
                     </div>
                     
                     <div className="text-center group-hover:scale-105 transition-transform duration-300">
-                      <div className="flex items-center justify-center w-10 h-10 bg-purple-500/20 rounded-xl mb-2 mx-auto">
-                        <Users className="w-5 h-5 text-purple-400" />
+                      <div className="flex items-center justify-center w-10 h-10 bg-blue-500/20 rounded-xl mb-2 mx-auto">
+                        <Users className="w-5 h-5 text-blue-400" />
                       </div>
                       <p className="text-2xl font-bold text-white">{project.stats.users}</p>
                       <p className="text-xs text-gray-400 font-medium">Contributors</p>
@@ -564,15 +566,15 @@ const Home = () => {
                   
                   {/* Modern Tech Stack */}
                   <div className="mb-8">
-                    <h4 className="text-lg font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-4 flex items-center gap-2">
-                      <div className="w-1 h-6 bg-gradient-to-b from-blue-400 to-purple-400 rounded-full"></div>
+                    <h4 className="text-lg font-bold bg-gradient-to-r from-blue-400 to-blue-400 bg-clip-text text-transparent mb-4 flex items-center gap-2">
+                      <div className="w-1 h-6 bg-gradient-to-b from-blue-400 to-blue-400 rounded-full"></div>
                       Tech Stack
                     </h4>
                     <div className="flex flex-wrap gap-3">
                       {project.tech.map((tech, i) => (
                         <span 
                           key={i} 
-                          className="px-4 py-2 text-sm bg-gradient-to-r from-slate-800/80 to-slate-700/80 backdrop-blur-sm text-gray-200 rounded-xl font-semibold border border-white/10 hover:border-blue-400/50 hover:scale-105 transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-500/10 hover:to-purple-500/10"
+                          className="px-4 py-2 text-sm bg-gradient-to-r from-slate-800/80 to-slate-700/80 backdrop-blur-sm text-gray-200 rounded-xl font-semibold border border-white/10 hover:border-blue-400/50 hover:scale-105 transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-500/10 hover:to-blue-500/10"
                         >
                           {tech}
                         </span>
@@ -592,7 +594,7 @@ const Home = () => {
                           key={i} 
                           className="flex items-start gap-4 p-3 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-white/20 hover:bg-white/10 transition-all duration-300 group/feature"
                         >
-                          <div className="flex-shrink-0 w-6 h-6 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center mt-0.5 group-hover/feature:scale-110 transition-transform duration-300">
+                          <div className="flex-shrink-0 w-6 h-6 bg-gradient-to-br from-blue-500 to-blue-500 rounded-lg flex items-center justify-center mt-0.5 group-hover/feature:scale-110 transition-transform duration-300">
                             <Star className="w-3 h-3 text-white" />
                           </div>
                           <span className="text-gray-300 font-medium leading-relaxed">{feature}</span>
@@ -621,13 +623,25 @@ const Home = () => {
                         href={project.live} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="flex-1 group/btn relative overflow-hidden px-8 py-4 bg-gradient-to-r from-transparent to-transparent border-2 border-blue-400 hover:bg-gradient-to-r hover:from-blue-400 hover:to-purple-400 hover:text-white text-blue-400 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25 hover:border-transparent"
+                        className="flex-1 group/btn relative overflow-hidden px-8 py-4 bg-gradient-to-r from-transparent to-transparent border-2 border-blue-400 hover:bg-gradient-to-r hover:from-blue-400 hover:to-blue-400 hover:text-white text-blue-400 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25 hover:border-transparent"
                       >
                         <div className="relative flex items-center justify-center gap-3 font-bold text-lg">
                           <ExternalLink className="w-5 h-5 group-hover/btn:-rotate-12 transition-transform duration-300" />
                           Live Demo
                         </div>
                       </a>
+                    )}
+
+                    {project['download-apk'] && (
+                      <div
+                        onClick={handleDownloadAPK}
+                        className="flex-1 group/btn relative overflow-hidden px-8 py-4 bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-400 hover:to-orange-400 text-white rounded-2xl transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-yellow-500/25"
+                      >
+                        <div className="relative flex items-center justify-center gap-3 font-bold text-lg">
+                          <Download className="w-5 h-5 group-hover/btn:-rotate-12 transition-transform duration-300" />
+                          Download APK
+                        </div>
+                      </div>
                     )}
                   </div>
                 </div>

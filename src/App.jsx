@@ -20,12 +20,27 @@ const handleDownloadResume = () => {
   document.body.removeChild(link);
 };
 
+const handleDownloadAPK = () => {
+  console.log('Starting APK download...');
+
+  // Create a link element
+  const link = document.createElement('a');
+  link.href = '/apk/app-debug.apk'; // Path to your APK in public folder
+  link.download = 'app-debug.apk'; // Name for downloaded file
+  link.target = '_blank'; // Optional: open in new tab as fallback
+
+  // Trigger download
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-slate-900 via-gray-800 to-slate-800">
       <Header handleDownloadResume={handleDownloadResume} />
 
       <main className="min-h-screen">
-        <Outlet context={{ handleDownloadResume }} />
+        <Outlet context={{ handleDownloadResume, handleDownloadAPK }} />
       </main>
 
       <Footer />
