@@ -117,6 +117,28 @@ const Home = () => {
       stats: { commits: "120+", files: "32+", users: "25+" }
     },
     {
+  "title": "Appwrite Blog Platform",
+  "subtitle": "Secure Blog Platform with Appwrite",
+  "description": "Full-stack blog application with user authentication, post CRUD, and responsive UI. Built with React, Appwrite, and Tailwind CSS for modern web experiences.",
+  "longDescription": "A robust blogging platform that implements secure authentication, post creation, editing, deletion, and user-friendly design. Integrated with Appwrite backend services for authentication and database, styled with Tailwind CSS, and deployed on Vercel for scalability.",
+  "tech": ["React.js", "Appwrite", "Tailwind CSS", "Vercel", "JavaScript", "React Router"],
+  "features": [
+    "Secure User Authentication (Appwrite)",
+    "Post Creation, Editing & Deletion",
+    "Protected Routes & Access Control",
+    "Rich Text Editor with Markdown Support",
+    "Responsive & Mobile-Friendly UI",
+    "Deployment on Vercel with CI/CD Integration"
+  ],
+  "github": "https://github.com/LokeshAlli21/Appwrite-Blog",
+  "live": "https://appwrite-blog-first-deploy.vercel.app/",
+  "status": "Live",
+  "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&h=400&fit=crop&crop=faces,edges",
+  "color": "from-blue-500 to-indigo-600",
+  "stats": { "commits": "100+", "files": "30+", "users": "20+" }
+}
+,
+    {
       title: "Online Course Platform",
       subtitle: "Education Technology Solution",
       description: "Udemy-inspired learning platform with video streaming, enrollment system, and payment integration. Empowering online education.",
