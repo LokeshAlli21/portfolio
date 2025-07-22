@@ -378,7 +378,7 @@ const Home = () => {
               LinkedIn
             </a>
             <button onClick={handleDownloadResume} className="group border-2 border-gray-400 hover:bg-gray-400 hover:text-slate-900 px-10 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 flex items-center gap-3 shadow-2xl hover:shadow-gray-500/25 text-lg">
-              <Download className="w-6 h-6 group-hover:bounce transition-transform" />
+              <Download className="w-6 h-6 group-hover:animate-bounce transition-transform" />
               Resume
             </button>
           </div>
@@ -638,7 +638,7 @@ const Home = () => {
                         className="flex-1 group/btn relative overflow-hidden px-8 py-4 bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-400 hover:to-orange-400 text-white rounded-2xl transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-yellow-500/25"
                       >
                         <div className="relative flex items-center justify-center gap-3 font-bold text-lg">
-                          <Download className="w-5 h-5 group-hover/btn:-rotate-12 transition-transform duration-300" />
+                          <Download className="w-5 h-5 group-hover/btn:animate-bounce transition-transform duration-300" />
                           Download APK
                         </div>
                       </div>
