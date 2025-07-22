@@ -83,7 +83,7 @@ const Home = () => {
       "tech": ["React.js", "Appwrite", "Tailwind CSS", "Vercel", "JavaScript", "Redux" , "React Router"],
       "features": [
         "User Authentication & Authorization with Appwrite",
-        "Post Creation, Editing, and Deletion",
+        "Post Creation, Editing, Updation and Deletion",
         "Protected Routes with Access Control",
         "Responsive Frontend with Tailwind CSS",
         "Optimized Deployment on Vercel",
@@ -92,7 +92,7 @@ const Home = () => {
       "github": "https://github.com/LokeshAlli21/Appwrite-Blog",
       "live": "https://appwrite-blog-first-deploy.vercel.app/",
       "status": "Live",
-      "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&h=400&fit=crop&crop=faces,edges",
+      "image": "project-images/mega-blog.png",
       "color": "from-blue-500 to-indigo-600",
       "stats": { "commits": "10+", "files": "30+", "users": "1" },
       "date": "Oct 2024"
@@ -113,31 +113,76 @@ const Home = () => {
       ],
       "github": "https://github.com/LokeshAlli21/Book-Notes",
       "status": "Completed",
-      "image": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&h=400&fit=crop&crop=faces,edges",
+      "image": "project-images/book-notes.png",
       "color": "from-orange-500 to-red-600",
       "stats": { "commits": "20+", "files": "10+", "users": "1" },
       "date": "Apr 2024"
     },
     {
-      title: "Online Course Platform",
-      subtitle: "Education Technology Solution",
-      description: "Udemy-inspired learning platform with video streaming, enrollment system, and payment integration. Empowering online education.",
-      longDescription: "A comprehensive e-learning platform that replicates the functionality of major course platforms with video-based learning, user management, and monetization features.",
-      tech: ["MERN Stack", "JWT Auth", "Video Streaming", "Payment Gateway"],
-      features: [
-        "Course Creation & Management",
-        "Video Streaming Platform",
-        "User Enrollment System",
-        "Payment Integration",
-        "Progress Tracking",
-        "Mobile Responsive"
+      "title": "Online Course Platform",
+      "subtitle": "EdTech Platform | College Project",
+      "description": "Team project built with React.js and Appwrite for managing online courses with multi-role user access, video streaming, and authentication.",
+      "longDescription": "A collaborative college project designed to replicate major e-learning platforms. Developed using React.js with Appwrite services, this platform supports three user roles — Student, Educator, and Admin — each with distinct operations and dashboards. Key features include authentication, course management, enrollment system, and role-based access. Built with a focus on usability, scalability, and team collaboration.",
+      "tech": ["React.js", "Appwrite", "Tailwind CSS", "JavaScript", "Role-Based Access Control"],
+      "features": [
+        "Multi-Role User System (Student, Educator, Admin)",
+        "Authentication & Authorization with Appwrite",
+        "Course Creation & Enrollment",
+        "Video Streaming Support",
+        "Role-Based Access & Operations",
+        "Responsive UI with Tailwind CSS"
       ],
-      github: "https://github.com/LokeshAlli21/Online-Course-Platform",
-      status: "Featured",
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop&crop=faces,edges",
-      color: "from-cyan-500 to-blue-600",
-      stats: { commits: "200+", files: "60+", users: "15+" }
+      "github": "https://github.com/Shripad21/Online_Course_Platform",
+      "status": "Featured",
+      "image": "project-images/online-course-platform.png",
+      "color": "from-cyan-500 to-blue-600",
+      "stats": { "commits": "20+", "files": "25+", "users": "2+" },
+      "date": "June 2025",
+      "projectType": "College Group Project"
     },
+    {
+  "title": "Pixabay Clone",
+  "subtitle": "Image Search App | College Project",
+  "description": "React.js-based image search app using Pixabay REST API with modern state management through React Hooks and Context API.",
+  "longDescription": "A college project built with React.js, replicating Pixabay's image search functionality. Integrated with the Pixabay REST API for dynamic image retrieval. Utilized React Hooks and Context API for efficient state management. The app features real-time search, image fetching, and a responsive user interface designed for optimal user experience.",
+  "tech": ["React.js", "JavaScript", "REST API", "React Hooks", "Context API"],
+  "features": [
+    "Image Search Functionality",
+    "Pixabay REST API Integration",
+    "State Management with React Hooks & Context API",
+    "Dynamic Image Rendering",
+    "Responsive UI Design"
+  ],
+  "github": "https://github.com/Shripad21/Pixabay",
+  "status": "Completed",
+  "image": "project-images/pixabay-clone.png",
+  "color": "from-purple-500 to-pink-500",
+  "stats": { "commits": "3+", "files": "25+", "users": "2+" },
+  "date": "April 2024",
+  "projectType": "College Group Project"
+},
+{
+  "title": "Kids Learning App",
+  "subtitle": "Educational Android App | College Project | Diploma",
+  "description": "Android-based learning app for kids with interactive modules and engaging UI, built using Java and XML in Android Studio.",
+  "longDescription": "A college group project aimed at developing a simple yet engaging Android application for kids' learning. Built using Java and XML in Android Studio, the app features a variety of interactive learning modules designed to enhance children's active engagement. Focused on user-friendly design and educational value.",
+  "tech": ["Android Studio", "Java", "XML", "Android SDK"],
+  "features": [
+    "Attractive User Interface for Kids",
+    "Multiple Learning Modules",
+    "Interactive UI Elements",
+    "Simple Navigation for Better Engagement",
+    "Offline Support (Optional)"
+  ],
+  "github": "https://github.com/LokeshAlli21/Kids-Learning-App",
+  "status": "Completed",
+  "image": "project-images/kids-learning-app.jpg",
+  "color": "from-yellow-400 to-orange-500",
+  "stats": { "commits": "3+", "files": "20+", "users": "2+" },
+  "date": "March 2022",
+  "projectType": "College Group Project"
+}
+
   ];
 
   const skills = {
@@ -394,113 +439,194 @@ const Home = () => {
       </section>
 
       {/* Enhanced Projects Section */}
-      <section id="projects" className="relative py-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+<section id="projects" className="relative py-32 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        {/* Animated Background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-gray-900 to-black">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1),transparent_70%)]"></div>
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        </div>
+        
+        <div className="max-w-7xl mx-auto relative z-10">
+          {/* Enhanced Header */}
+          <div className="text-center mb-24">
+            <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500/10 to-purple-500/10 backdrop-blur-xl border border-white/10 rounded-full mb-8">
+              <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full animate-pulse"></div>
+              <span className="text-sm font-medium text-blue-400">Portfolio Highlights</span>
+            </div>
+            
+            <h2 className="text-6xl lg:text-7xl font-black mb-8 tracking-tight">
+              <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent animate-gradient-x">
                 Featured Projects
               </span>
             </h2>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Featured projects demonstrating end-to-end development capabilities, from responsive frontend interfaces to robust backend systems and database optimization.
+            
+            <p className="text-xl lg:text-2xl text-gray-400 max-w-4xl mx-auto leading-relaxed font-light">
+              Showcasing <span className="text-white font-semibold">full-stack expertise</span> through innovative solutions, 
+              from <span className="text-blue-400">modern UIs</span> to <span className="text-purple-400">scalable architectures</span>
             </p>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-10">
+          {/* Modern Grid Layout */}
+          <div className="grid xl:grid-cols-2 gap-8 lg:gap-12">
             {projects.map((project, index) => (
-              <div key={index} className="group rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-500 transform hover:scale-105 hover:shadow-2xl overflow-hidden">
-                {/* Project Image */}
-                <div className="relative h-64 overflow-hidden">
+              <div 
+                key={index} 
+                className="group relative rounded-3xl bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-xl border border-white/10 hover:border-white/20 transition-all duration-700 transform hover:scale-[1.02] hover:-translate-y-2 overflow-hidden"
+                style={{
+                  animationDelay: `${index * 200}ms`,
+                  animation: 'fadeInUp 0.8s ease-out forwards'
+                }}
+              >
+                {/* Gradient Overlay */}
+                <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-0 group-hover:opacity-5 transition-opacity duration-700`}></div>
+                
+                {/* Project Image with Advanced Effects */}
+                <div className="relative h-72 lg:h-80 overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20 z-10"></div>
                   <img 
                     src={project.image} 
                     alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-110 group-hover:brightness-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                  <div className="absolute top-4 right-4">
-                    <span className={`px-4 py-2 text-xs rounded-full font-medium ${
-                      project.status === 'Live' ? 'bg-green-500/20 text-green-400 border border-green-500/30' :
-                      project.status === 'Featured' ? 'bg-blue-500/20 text-blue-400 border border-blue-500/30' :
-                      project.status === 'Production Ready' ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30' :
-                      'bg-cyan-500/20 text-cyan-400 border border-cyan-500/30'
-                    }`}>
+                  
+                  {/* Floating Status Badge */}
+                  <div className="absolute top-6 right-6 z-20">
+                    <div className={`relative px-5 py-2 text-sm rounded-2xl font-bold backdrop-blur-xl border transform transition-all duration-500 group-hover:scale-110 ${
+                      project.status === 'Live' ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30 shadow-emerald-500/25' :
+                      project.status === 'Featured' ? 'bg-blue-500/20 text-blue-300 border-blue-500/30 shadow-blue-500/25' :
+                      project.status === 'Production Ready' ? 'bg-violet-500/20 text-violet-300 border-violet-500/30 shadow-violet-500/25' :
+                      'bg-cyan-500/20 text-cyan-300 border-cyan-500/30 shadow-cyan-500/25'
+                    } shadow-xl`}>
+                      <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-white/10 to-transparent"></div>
                       {project.status}
-                    </span>
+                    </div>
                   </div>
+                  
+                  {/* Hover Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 z-10"></div>
                 </div>
 
-                <div className="p-8">
-                  {/* Project Header */}
-                  <div className="mb-6">
-                    <h3 className="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors mb-2">
-                      {project.title}
-                    </h3>
-                    <p className="text-blue-400 text-sm font-medium mb-3">{project.subtitle}</p>
-                    <p className="text-gray-300 leading-relaxed">{project.description}</p>
+                <div className="p-8 lg:p-10">
+                  {/* Enhanced Project Header */}
+                  <div className="mb-8">
+                    <div className="flex items-center justify-between mb-4">
+                      <h3 className="text-3xl lg:text-4xl font-black text-white group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-400 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-500">
+                        {project.title}
+                      </h3>
+                      {project.projectType && (
+                        <span className="text-xs px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full border border-purple-500/30">
+                          {project.projectType}
+                        </span>
+                      )}
+                    </div>
+                    
+                    <p className="text-blue-400 text-lg font-semibold mb-4">{project.subtitle}</p>
+                    <p className="text-gray-300 text-lg leading-relaxed font-light">{project.description}</p>
                   </div>
                   
-                  {/* Stats */}
-                  <div className="flex gap-6 mb-6 text-sm text-gray-400">
-                    <div className="flex items-center gap-2">
-                      <GitBranch className="w-4 h-4 text-blue-400" />
-                      <span className="font-medium">{project.stats.commits}</span>
+                  {/* Advanced Stats Grid */}
+                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-8 p-6 bg-black/20 backdrop-blur-sm rounded-2xl border border-white/10">
+                    <div className="text-center group-hover:scale-105 transition-transform duration-300">
+                      <div className="flex items-center justify-center w-10 h-10 bg-blue-500/20 rounded-xl mb-2 mx-auto">
+                        <GitBranch className="w-5 h-5 text-blue-400" />
+                      </div>
+                      <p className="text-2xl font-bold text-white">{project.stats.commits}</p>
+                      <p className="text-xs text-gray-400 font-medium">Commits</p>
                     </div>
-                    <div className="flex items-center gap-2">
-                      <Code className="w-4 h-4 text-blue-400" />
-                      <span className="font-medium">{project.stats.files}</span>
+                    
+                    <div className="text-center group-hover:scale-105 transition-transform duration-300">
+                      <div className="flex items-center justify-center w-10 h-10 bg-green-500/20 rounded-xl mb-2 mx-auto">
+                        <Code className="w-5 h-5 text-green-400" />
+                      </div>
+                      <p className="text-2xl font-bold text-white">{project.stats.files}</p>
+                      <p className="text-xs text-gray-400 font-medium">Files</p>
                     </div>
-                    <div className="flex items-center gap-2">
-                      <Users className="w-4 h-4 text-blue-400" />
-                      <span className="font-medium">{project.stats.users}</span>
+                    
+                    <div className="text-center group-hover:scale-105 transition-transform duration-300">
+                      <div className="flex items-center justify-center w-10 h-10 bg-purple-500/20 rounded-xl mb-2 mx-auto">
+                        <Users className="w-5 h-5 text-purple-400" />
+                      </div>
+                      <p className="text-2xl font-bold text-white">{project.stats.users}</p>
+                      <p className="text-xs text-gray-400 font-medium">Contributors</p>
                     </div>
+                    
+                    {project.date && (
+                      <div className="text-center group-hover:scale-105 transition-transform duration-300">
+                        <div className="flex items-center justify-center w-10 h-10 bg-orange-500/20 rounded-xl mb-2 mx-auto">
+                          <Calendar className="w-5 h-5 text-orange-400" />
+                        </div>
+                        <p className="text-sm font-bold text-white">{project.date}</p>
+                        <p className="text-xs text-gray-400 font-medium">Released</p>
+                      </div>
+                    )}
                   </div>
                   
-                  {/* Technologies */}
-                  <div className="mb-6">
-                    <h4 className="text-sm font-semibold text-blue-400 mb-3">Technologies:</h4>
-                    <div className="flex flex-wrap gap-2">
+                  {/* Modern Tech Stack */}
+                  <div className="mb-8">
+                    <h4 className="text-lg font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-4 flex items-center gap-2">
+                      <div className="w-1 h-6 bg-gradient-to-b from-blue-400 to-purple-400 rounded-full"></div>
+                      Tech Stack
+                    </h4>
+                    <div className="flex flex-wrap gap-3">
                       {project.tech.map((tech, i) => (
-                        <span key={i} className="px-3 py-1 text-xs bg-slate-700 text-gray-300 rounded-lg font-medium">
+                        <span 
+                          key={i} 
+                          className="px-4 py-2 text-sm bg-gradient-to-r from-slate-800/80 to-slate-700/80 backdrop-blur-sm text-gray-200 rounded-xl font-semibold border border-white/10 hover:border-blue-400/50 hover:scale-105 transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-500/10 hover:to-purple-500/10"
+                        >
                           {tech}
                         </span>
                       ))}
                     </div>
                   </div>
                   
-                  {/* Key Features */}
-                  <div className="mb-8">
-                    <h4 className="text-sm font-semibold text-blue-400 mb-3">Key Features:</h4>
-                    <div className="grid grid-cols-1 gap-2">
+                  {/* Enhanced Features */}
+                  <div className="mb-10">
+                    <h4 className="text-lg font-bold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent mb-5 flex items-center gap-2">
+                      <div className="w-1 h-6 bg-gradient-to-b from-green-400 to-blue-400 rounded-full"></div>
+                      Key Features
+                    </h4>
+                    <div className="space-y-3">
                       {project.features.slice(0, 4).map((feature, i) => (
-                        <div key={i} className="flex items-center gap-3 text-sm text-gray-300">
-                          <Star className="w-4 h-4 text-blue-400 flex-shrink-0" />
-                          <span>{feature}</span>
+                        <div 
+                          key={i} 
+                          className="flex items-start gap-4 p-3 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-white/20 hover:bg-white/10 transition-all duration-300 group/feature"
+                        >
+                          <div className="flex-shrink-0 w-6 h-6 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center mt-0.5 group-hover/feature:scale-110 transition-transform duration-300">
+                            <Star className="w-3 h-3 text-white" />
+                          </div>
+                          <span className="text-gray-300 font-medium leading-relaxed">{feature}</span>
                         </div>
                       ))}
                     </div>
                   </div>
                   
-                  {/* Action Buttons */}
-                  <div className="flex gap-4">
+                  {/* Premium Action Buttons */}
+                  <div className="flex flex-col sm:flex-row gap-4">
                     <a 
                       href={project.github} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-300 transform hover:scale-105 font-medium"
+                      className="flex-1 group/btn relative overflow-hidden px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white rounded-2xl transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25"
                     >
-                      <Github className="w-4 h-4" />
-                      Code
+                      <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
+                      <div className="relative flex items-center justify-center gap-3 font-bold text-lg">
+                        <Github className="w-5 h-5 group-hover/btn:rotate-12 transition-transform duration-300" />
+                        View Code
+                      </div>
                     </a>
+                    
                     {project.live && (
                       <a 
                         href={project.live} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-4 py-2 border border-blue-400 hover:bg-blue-400 hover:text-slate-900 text-blue-400 rounded-lg transition-all duration-300 transform hover:scale-105 font-medium"
+                        className="flex-1 group/btn relative overflow-hidden px-8 py-4 bg-gradient-to-r from-transparent to-transparent border-2 border-blue-400 hover:bg-gradient-to-r hover:from-blue-400 hover:to-purple-400 hover:text-white text-blue-400 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25 hover:border-transparent"
                       >
-                        <ExternalLink className="w-4 h-4" />
-                        Live Demo
+                        <div className="relative flex items-center justify-center gap-3 font-bold text-lg">
+                          <ExternalLink className="w-5 h-5 group-hover/btn:-rotate-12 transition-transform duration-300" />
+                          Live Demo
+                        </div>
                       </a>
                     )}
                   </div>
@@ -509,6 +635,33 @@ const Home = () => {
             ))}
           </div>
         </div>
+        
+        <style jsx="true">{`
+          @keyframes fadeInUp {
+            from {
+              opacity: 0;
+              transform: translateY(30px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+          
+          @keyframes gradient-x {
+            0%, 100% {
+              background-position: 0% 50%;
+            }
+            50% {
+              background-position: 100% 50%;
+            }
+          }
+          
+          .animate-gradient-x {
+            background-size: 200% 200%;
+            animation: gradient-x 4s ease infinite;
+          }
+        `}</style>
       </section>
 
       {/* Enhanced Achievements Section */}
