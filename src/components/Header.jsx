@@ -66,6 +66,12 @@ const Header = ({handleDownloadResume}) => {
       href: 'mailto:lokeshalli1807@gmail.com', 
       label: 'Email',
       color: 'hover:text-emerald-400 hover:bg-emerald-400/10'
+    },
+    { 
+      icon: Code, 
+      href: 'https://leetcode.com/u/lokesh1807/', 
+      label: 'LeetCode',
+      color: 'hover:text-yellow-400 hover:bg-yellow-400/10'
     }
   ];
 
