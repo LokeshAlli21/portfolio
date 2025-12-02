@@ -10,7 +10,7 @@ const handleDownloadResume = () => {
   
   // Create a link element
   const link = document.createElement('a');
-  link.href = '/resume/resume.pdf'; // Path to your PDF in public folder
+  link.href = '/resume/resume_dec_25.pdf'; // Path to your PDF in public folder
   link.download = 'resume.pdf'; // Name for downloaded file
   link.target = '_blank'; // Optional: open in new tab as fallback
   
